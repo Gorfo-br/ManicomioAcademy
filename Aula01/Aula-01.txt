@@ -1,0 +1,163 @@
+"""
+    Aula 01
+    Curso de Programação com o Gorfão
+ 
+    __Author__ = "Gorfo"
+
+"""
+[*] Paradigma de Programação
+
+	Paradigma de programação é um meio de classificar uma lang
+        baseado nas funcionalidades dela.
+        https://pt.wikipedia.org/wiki/Paradigma_de_programa%C3%A7%C3%A3o
+    
+   Geralmente as pessoas aprendem a programar em faculdades e cursos
+de maneira estruturada antes de se aprender orientação a objeto, mas
+basicamente os paradigmas de programação são formas de se programar,
+e cada linguagem é projetada para um paradigma específico.
+
+No princípio a programação estruturada dominava amplamente as universidades,
+Muita gente iniciou na programação em C utilizando programação estruturada,
+ou seja o programa segue uma estrutura de:
+
+Sequência
+
+Decisão
+
+Repetição
+
+http://b-ok.xyz/book/2360899/ce5c91
+
+Esta foi a principal maneira de se programar antes da orientação a objeto.
+
+Exemplo:
+
+        algoritimo para acender a luz
+
+        [*] levantar da cadeira
+        ::::: Levantando da cadeira e se deslocando ao interruptor
+        existe algum obstáculo a frente?
+        [sim] ---- [não]
+        se existir desviar,
+        se não seguir em direção ao interruptor
+        [*] > sim
+        ::::: desviando do obstáculo
+        [interruptor]
+        O interruptor tem duas opções
+        [ligar] --- [desligar]
+        [*] > ligar
+        o interruptor foi executado com a opção ligar e a luz foi acesa.
+
+observe que isso seguiu uma sequencia lógica com decisões lógicas
+
+[*] Orientação a Objeto
+
+	No paradigma de orientação a objeto você também vai seguir blocos 
+de instruçoes a diferença é que você pode trabalhar com objetos.
+
+O conceito de objetos é que você pode trazer coisas do mundo real para o 
+seu código, quase como serial experiments lain rsrs.
+
+Objetos tem características palpáveis, como por exemplo um gato.
+
+    Objeto [gato]
+         atributos do [gato]:
+             Nome = gato_
+             Cor  = verde_limao
+             Peso = 380kg
+             Tipo = felino
+
+Repare que o gato tem atributos e um deles é ser um felino, mas dentro dos 
+felinos temos varios outros gatos e tigres e leopardos e outros
+    
+    Objeto [felinos]
+          atributos dos [felinos]:
+                  [Gatos]
+                  [Tigres]
+                  [Leopardos]
+
+E dentro de felinos temos varios outros felinos por exemplo
+
+    Objeto [tigre]:
+          Nome = tigre
+          Cor = azul_com_bolinhas_brancas
+          Peso = 900kg
+          Tipo = felino
+
+Repare que o gato e o tigre são felinos.
+
+Agora se eu disser que TODOS OS FELINOS SÃO BICHOS
+
+automaticamente o gato e o tigre são bichos pois eles herdaram 
+esta característica dos felinos
+
+
+Na programação orientada a objetos a gente faz exatamente isso com 
+o nosso código por meio de Classes 
+
+Não vou explicar laços de repetição, comentários, declaração de variáveis, 
+se você não sabe sobre isso ainda, procure e depois veja esta aula novamente.
+
+Antes de colocarmos a mão na massa, preciso explicar a diferença de compilador e interpretador:
+
+  [*] Compilador
+      Compilador basicamente é um programa de sistema que traduz um programa
+      descrito em uma linguagem de programação escrito em alto nível 
+      (compreensível à humanos) para um código de maquina (Não compreensível 
+      à humanos)que seu computador vai entender.
+
+  Linguagens compiladas são menos portáveis para outros sistemas pois o 
+  compilador é escrito para o sistema que está operando, então se eu compilo
+  um código em C++ usando o gcc no linux, e gero um executável, este executável   
+  funcionará bem no linux, porém eu não vou conseguir rodar o executável no 
+  windows já que o sistema operacional é outro, então eu vou ter que compilar 
+  novamente.
+
+  [*] Interpretador
+      O interpretador também traduz o código para maquina porém você pode 
+      escrever o código no linux que se executar ele no windows teoricamente
+      ele vai executar da mesma forma pois o interpretador vai traduzir para
+      o sistema que esta sendo executado. existem interpretadores que compilam
+      o seu codigo para linguagem de maquina, existem transpíladores a onde
+      você programa por exemplo em javascript e ele transforma em java para 
+      android como no caso do ionic entre outros.
+ 
+  A desvantágem de se precisar de um interpretador é que sem o interpretador no   
+  sistema o seu codigo não será executado. Mas existem ferramentas para se 
+  compilar seu source depois de pronto para rodar ele em outro lugar sem 
+  interpretador.
+
+[*] Configuração da IDE
+    
+    Para este curso vamos utilizar o pycharm community
+    eu uso ele profissionalmente e me atende muito bem!
+
+    https://www.jetbrains.com/pycharm/download/#section=linux
+    
+    depois de instalado vamos instalar o material theme para deixar o visual
+    mais agradável já que passamos muito tempo na IDE nada melhor que deixar
+    ela com uma cara mais agradável não é mesmo?
+
+[*] github
+    
+    Um software de versionamento serve para você e outras pessoas que estao
+    programando com você poderem visualizar atualizar e baixar os sources do 
+    programa, mas não só isso, no mundo da programação ter um git é extremamente    
+    importante pois este é o seu curriculo, ou seja, se alguem for te contratar
+    vai ver teu git antes e isso pode ate te livrar da entrevista que quase 
+    sempre é desenvolver alguma coisa que é pedido.
+
+    OU seja o github é seu portifólio, se você não tem nenhuma experiência,
+    Crie projetos no seu git, invente softwares, aproveite para fazer alguma 
+    contribuição para a comunidade, softwares em uso por empresas pesam mais 
+    seu curriculo, então se quer fazer um portifolio legal e não tem nada em 
+    mente, procura alguem que precisa de um software e faz de graça mesmo para
+    o cara e posta no seu git.
+
+
+    Vejam este tutorial no proprio site do git
+    https://guides.github.com/activities/hello-world/
+
+    na proxima aula vamos configurar a IDE e o git
+
+Esta aula foi uma introdução ao curso, seja bem vindo.
